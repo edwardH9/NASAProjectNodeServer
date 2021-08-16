@@ -1,0 +1,33 @@
+body{
+    background: black;
+}
+
+.title{
+    font-family:"Space Mono";
+    color:white;
+}
+.paragraph{
+    color:white;
+}
+a{
+    font-family: "Roboto";
+    font-size: .9vw;
+    color:deepskyblue;
+    margin-right:30px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.title{
+    margin:80px 160px 60px 160px;
+    font-size:2.2vw;
+}
+
+.navdiv{
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    margin:60px 160px 80px 160px;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "nodes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serverHttp.js",
+  "scripts": {
+    "start": "nodemon serverHttp.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-mysql-session": "^2.1.6",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "raspberry-pi-camera-native": "^0.0.0",
+    "raspberrypi-node-camera-web-streamer": "^1.1.2",
+    "routes": "^2.1.0",
+    "ws": "^7.5.3"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>MEEDRH Mission Control Interface</title>
+
+    <div class="containerH">
+    <nav>
+        <span> <a href="/api">General API</a> </span>
+        <span><a href="/missionInformation">Mission Information Log</a> </span>
+        <span><a href="/cameraR">Land Unit Interface</a></span> 
+        <span><a href="/cameraD">Air Unit Interface</a></span>
+        <!--<a href="/members">MTF Members</a>-->
+    </nav>
+    </div>
+</head>
+<body>
+    <header>
+    <h1 class="title">MEEDRH Mission Control Interface</h1>
+    <p class="devTag">Developed by Edward Hernandez</p>
+    </header>
+
+    <main>
+        <div class="welcomeTag1">
+    <h2>Welcome, <%=uData[0].firstName%></h2>
+    <p>You have full permissions</p>
+        </div>
+    </main>
+
+</body>
+<footer>
+    <div class="containerF">
+        <h3 class="sponsorTag">Sponsors:</h3>
+        <img src="http://casgc.ucsd.edu/blog/wp-content/themes/casgc/images/logo_lofi.gif" alt="Other CASGC Logo 2" width="400"/>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4d%2Fe4%2F30%2F4de430dde2298e5af2f8287318acf19f.png&f=1&nofb=1" width=155/>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/missionStyle.css">
+    <title>Mission Log</title>
+</head>
+<body>
+    <div class="containerH">
+        <nav>
+            <span><a href="/">Home</a> </span>
+            <span><a href="/development">About the MEEDRH</a></span>
+            <span><a href="/biologyApplications">Biological Applications</a></span>
+            <span><a href="/delta">Further Development</a></span>
+            <!--<span><a href="/cameraR">Land Unit Interface</a></span> 
+                <span> <a href="/api">General API</a> </span>
+            <span><a href="/cameraD">Air Unit Interface</a></span>
+            <a href="/members">MTF Members</a>-->
+        </nav>
+        </div>
+
+        <form action="/missionInformation" method="POST">
+            <br>
+            <label>Search:</label>
+            <input type="text" name="searchTerms">
+            <button type="submit" class="searchButton">Search</button>
+            <br>
+        </form>
+
+    <div class="tableSQL">
+        <h2>Mission Log Data</h2>
+        <table class="table1">
+            <thead>
+            <tr>
+                <div class="tableHeads">
+                <th>Mission Number</th>
+                <th>Team Leader</th>
+                <th>Mission Site</th>
+                <th>Mission Goals</th>
+                <th>Mission Date</th>
+                <th>Planned Uptime</th>
+                </div>
+            </tr>
+            </thead>
+
+        <tbody id="uTable">
+            <% for (var i=0;i<rows.length;i++){ %>
+                <tr>
+                    <td align="center"><%= rows[i].missionNumber %></td>
+                    <td align="left"><%= rows[i].teamLead %></td>
+                    <td align="left"><%= rows[i].missionSite%></td>
+                    <td align="left"><%= rows[i].missionGoals %></td>
+                    <td align="left"><%= rows[i].missionDate %></td>
+                    <td align="left"><%= rows[i].plannedUptime %></td>
+                </tr>
+                    <% } %>
+        </tbody>
+        </table>
+        </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    background: black;
+}
+
+.title{
+    font-family:"Space Mono";
+    color:white;
+}
+.paragraph{
+    color:white;
+}
+a{
+    font-family: "Roboto";
+    color:deepskyblue;
+}
+a:hover{
+    text-decoration: none;
+}

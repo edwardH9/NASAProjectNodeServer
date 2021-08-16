@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/devStyle.css">
+    <title>About the MEEDRH</title>
+
+    <div class="containerH">
+    <nav>
+        <span><a href="/">Home</a></span>
+        <span><a href="/missionInformation">Mission Information Log</a> </span>
+        <span><a href="/biologyApplications">Biological Applications</a></span>
+        <span><a href="/delta">Further Development</a></span>
+        <!--<span><a href="/cameraR">Land Unit Interface</a></span> 
+            <span> <a href="/api">General API</a> </span>
+        <span><a href="/cameraD">Air Unit Interface</a></span>
+        <a href="/members">MTF Members</a>-->
+    </nav>
+    </div>
+</head>
+<body>
+    <div class="titleCard">
+    <header>
+    <h1 class="title">About the MEEDRH</h1>
+    <p class="devTag">Developed by Edward Hernandez</p>
+    </header>
+    </div>
+
+    <main>
+        <div class="textBody">
+        <p class="summaryP">The Multipurpose Extreme Environment Drone Rover Hybrid (MEEDRH) is designed to explore areas around the world that humans wouldn't survive in.</p> 
+            <p>To match this goal, the MEEDRH has specifications such as the ability survive extremely high temperatures of up to 1250°C.
+            To meet this specification, the MEEDRH uses passive and active cooling technology to respond intelligently to the environment that 
+            the mission site will present. While the MEEDRH has standard obstacle avoidance and self-driving capabilities, this unit is no ordinary autonomous vehicle. </p>
+            <br>
+            <p>The MEEDRH is <b>both</b> a land based vehicle ("rover") and an air based vehicle ("drone") in one unit.</p>
+            <br>
+            
+            <h3>Land Based Unit ("Rover")</h3>
+
+            <p class="indentP">The rover's electrical communications are handled by the Raspberry Pi single board computer. This unit handles the autonomous navigation features of the MEEDRH and 
+            also actively collects data in real time during deployment. The rover has the following capabilities:</p>
+            <ul> Capabilties during operation:
+                <li>Remote excavation of earth samples</li>
+                <li>Passive data collection on variables such as ambient temperature, mission uptime, system diagnostics, etc</li>
+                <li>Ability to record surveillance or take still images (both continously and in set time intervals)</li>
+            </ul>
+            
+            <p class="indentP">The data that the rover gathers is stored locally until the mission is finished and the unit returns back to it's home base. On connection to a known network, the rover has the ability to upload data collected
+            during a mission to another part of the project, the MEEDRH server. The server has been programmed to interface directly with 
+            it's own database and the Raspberry Pi seamlessly. The server offers the following functionalities:</p>
+            
+            <ul>
+                <li>Database integration to store all mission data</li>
+                <li>Authentication based permissions</li>
+                <li>Asynchronous design (Ability to process multiple requests simultaneously)</li>
+                <li>Ability to broadcast data throughout a secure network (specifically useful for the camera feed's of the drone and rover)</li>
+                <li>Pre-configured API to allow public access to the MEEDRH's missions and data</li>
+            </ul>
+            
+            </p>
+            <p class="indentP">
+                On the inside, the MEEDRH uses intelligent circuit design to protect all electronic hardware. One aspect of this design is the implementation of 
+                standalone power supplies for the onboard sensors. Avoiding using the Pi as a power supply yields greater performance and more reliable launches overall. The rover will
+                have obscurable solar panels and modified integrated circuits that can charge these power supplies, even during deployment. 
+            </p>
+        </p>
+        <h3>Air Based Unit ("Drone")</h3>
+        <p class="indentP">
+            The drone is stationed on the top interior panel of the rover. The drone is held electromagnetically to the rover's frame until the Raspberry Pi receives the 
+            request to deploy the drone. Once deployed, the drone uses an onboard camera to create a live feed of what it sees. Simultaneous with the camera's activation, 
+            other microcontrollers on the drone instantiate a WiFi connection and stream the camera feed to a page on this network. Through this access point, any mission personnel
+            can monitor the progress of the mission in real time. On the same page as the camera feed, there is a graphical user interface that will allow a designated
+            pilot to remotely control the drone's movement. The drone was designed to fly directly inside a volcano and collect samples from the inside.
+            In all, the drone has the following capabilities:
+            <ul>
+                <li>Excavation of volcanic matter</li>
+                <li>Onboard storage of harvested samples</li>
+                <li>Transportation and injection of preloaded substances into the volcano</li>
+            </ul>
+        </p>
+            <br>
+        <h3>Closing</h3>
+        <p class="indentP">
+            The MEEDRH has unlimited potential and is unlike any other attempt at a multipurpose autonomous vehicle. There are more capabilities that can be added to
+            this vehicle including implementation of artificial intelligence, higher strength motors and drivers, more durable materials, and larger carrying capacity
+            for the drone. There were more capabilities planned for this unit, however, funding for materials has not arrived. If the budget was expanded, the funds were transferred
+            quicker, and the materials were delivered sooner, this project would be the greatest project the program would ever see.
+        </p>
+        </div>
+    </main>
+
+</body>
+<footer>
+    <div class="containerF">
+        <h3 class="sponsorTag">Sponsors:</h3>
+        <img src="http://casgc.ucsd.edu/blog/wp-content/themes/casgc/images/logo_lofi.gif" alt="Other CASGC Logo 2" width="400"/>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4d%2Fe4%2F30%2F4de430dde2298e5af2f8287318acf19f.png&f=1&nofb=1" width=155/>
+    </div>
+</footer>
+</html>

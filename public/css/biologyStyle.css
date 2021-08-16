@@ -1,0 +1,61 @@
+a{
+    color:deepskyblue;
+    }
+
+p{
+    color:white;
+}
+.textBody{
+    font-family:"Roboto", sans-serif;
+    margin: 10px 250px 40px 250px;
+    color:white;
+}
+
+.title{
+    color:white;
+    margin:80px 250px 50px 250px;
+}
+a:hover{
+    text-decoration: none;
+}
+span{
+    margin: 80px;
+}
+.containerH{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+    
+body{
+    background-color: black;
+}
+    
+.table1{
+    font-size:.74vw;
+    border-spacing: 60px 10px;
+    color: white;
+}
+    
+h2{
+    color:white;
+}
+    
+td{
+    margin:100px 100px 100px 100px;
+}
+
+.containerF{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    justify-content: space-evenly;
+}
+
+.sponsorTag{
+    color:white;
+}

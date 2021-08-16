@@ -1,0 +1,82 @@
+body{
+    background: black;
+}
+h2{
+    color:white
+}
+.devTag{
+    font-family: 'Roboto';
+    color:whitesmoke;
+    text-align:center;
+}
+.title{
+    font-family:"Space Mono";
+    color:white;
+    text-align:center;
+}
+
+.topContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    margin:80px 160px 80px 160px;
+}
+.formGroup{
+    justify-content: right;
+}
+.tableSQL{
+    justify-content: left;
+}
+.paragraph{
+    color:white;
+}
+a{
+    font-family: "Roboto";
+    color:deepskyblue;
+}
+a:hover{
+    text-decoration: none;
+}
+.form-u{
+    color:deepskyblue
+}
+.form-p{
+    color:deepskyblue
+}
+
+table{
+    width: 480px; 
+    height: 81px; 
+    color:white;
+}
+
+.sponsorTag{
+    color:white;
+}
+
+h2{
+    text-decoration: underline dotted;
+    text-decoration-color: deepskyblue;
+}
+
+.containerF{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+}
+
+.containerH{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+}
+
+span{
+    margin:80px
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/deltaStyle.css">
+    <title>About the MEEDRH</title>
+
+    <div class="containerH">
+    <nav>
+        <span><a href="/">Home</a></span>
+        <span><a href="/missionInformation">Mission Information Log</a> </span>
+        <span><a href="/biologyApplications">Biological Applications</a></span>
+        <span><a href="/delta">Further Development</a></span>
+        <!--<span><a href="/cameraR">Land Unit Interface</a></span> 
+            <span> <a href="/api">General API</a> </span>
+        <span><a href="/cameraD">Air Unit Interface</a></span>
+        <a href="/members">MTF Members</a>-->
+    </nav>
+    </div>
+</head>
+<body>
+    <div class="titleCard">
+    <header>
+    <h1 class="title">The Future of MEEDRH</h1>
+    </header>
+    </div>
+
+    <main>
+        <div class="textBody">
+        <p class="indentP1" id="titleID">The Multipurpose Extreme Environment Drone Rover Hybrid (MEEDRH) is a brilliantly designed machine, however it leaves many improvements possible.</p>
+            
+            <h3>Hardware Upgrades</h3>
+
+            <p class="indentP">The most beneficial of these improvements would be the replacement of the current brushless motors and electronic speed controllers, for a set of replacements that
+                can produce more thrust. A higher capacity battery would also be needed to keep up with the resulting increased power demands of the other upgrades. There 
+                may also be improvements in microcontrollers within the coming years that could leave a complete hardware replacement in order. The camera module and WiFi signal
+                are areas that would benefit greatly from replacement to more capable modules.
+        
+            
+            <p class="indentP">Aside from upgrading hardware, new hardware can also be added to the unit to multiply its abilities. One such upgrade was the inclusion of a camera module with
+                facial recognition enabled. This feature would be useful in the event that the drone harvested materials that are too dangerous to be handled by humans.
+                As an example, if the drone picked up lava/magma, the sample couldn't be handled by humans. If the drone had face recognition capabilities, it can be
+                programmed to follow a specific face back to an offloading station where the sample can be placed safely. This is just one example, many other possibilities
+                lay dormant with this model.
+            </p>
+            
+            <p class="indentP">
+                
+            </p>
+        </p>
+        <h3>Software Upgrades</h3>
+        <p class="indentP">
+            The rover is run entirely on Javascript for it's server operations. During deployment, the rover uses Python to read and write to the various onboard sensors.
+            The drone is run mostly off of C++ code. The bottlenecks of the current design lay only in the server operation to view the rover's camera live.
+            The image quality is transported through JPEG which updates at a slower pace than raw binary. Delays of up to one second have been observed with this set up.
+            The drone's camera feed is transported to the server in raw binary data, giving it a more responsive uptime. Delays for this camera aren't as easy to test,
+            as signal attenuation plays a role in the performance of this feature.
+        </p>
+        <h3>Closing</h3>
+        <p class="indentP">
+            As the Developer, Designer, and Project Leader, I can say with certainty that the MEEDRH has a bright future. This unit can act as an additional field researcher,
+            surveillance unit, toxic substance handler, and more. With additional funding, the MEEDRH could become a product that outperforms human exploration in worlds beyond our own. 
+        </p>
+        </div>
+    </main>
+
+</body>
+<footer>
+    <div class="containerF">
+        <h3 class="sponsorTag">Sponsors:</h3>
+        <img src="http://casgc.ucsd.edu/blog/wp-content/themes/casgc/images/logo_lofi.gif" alt="Other CASGC Logo 2" width="400"/>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4d%2Fe4%2F30%2F4de430dde2298e5af2f8287318acf19f.png&f=1&nofb=1" width=155/>
+    </div>
+</footer>
+</html>

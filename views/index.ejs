@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <title>MEEDRH Main Frame</title>
+
+    <div class="containerH">
+    <nav>
+        <span><a href="/development">About the MEEDRH</a></span>
+        <span><a href="/missionInformation">Mission Information Log</a> </span>
+        <span><a href="/biologyApplications">Biological Applications</a></span>
+        <span><a href="/delta">Further Development</a></span>
+        <!--<span><a href="/cameraR">Land Unit Interface</a></span> 
+            <span> <a href="/api">General API</a> </span>
+        <span><a href="/cameraD">Air Unit Interface</a></span>
+        <a href="/members">MTF Members</a>-->
+    </nav>
+    </div>
+</head>
+<body>
+    <header>
+    <h1 class="title">MEEDRH Data and Control Network</h1>
+    <p class="devTag">Developed by Edward Hernandez</p>
+    </header>
+
+    <main>
+        <div class="topContainer">
+            <div class="formGroup">
+            <form action="/" method="POST">
+                <br>
+                <label for="Username" class="form-u">Username:</label>
+                <br>
+                <input type="text" name="username" required>
+                <br>
+                <label for="password" class="form-p">Password:</label>
+                <br>
+                <input type="password" name="password" required>
+                <br>
+                <br>
+                <button type="submit" class="submitButton">Log In</button>
+            </form>
+            </div>
+
+            <div class="tableSQL">
+            <h2>Current Authorized Users</h2>
+            <table class="table table-inverse">
+                <thead>
+                <tr>
+                    <th>User ID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Status</th>
+                    <th>Access</th>
+                </tr>
+                </thead>
+
+            <tbody id="uTable">
+                <% for (var i=0;i<rows.length;i++){ %>
+                    <tr>
+                        <td align="center"><%= rows[i].userID %></td>
+                        <td align="center"><%= rows[i].lastName %></td>
+                        <td align="center"><%= rows[i].firstName %></td>
+                        <td align="center"><%= rows[i].status %></td>
+                        <td align="center"><%= rows[i].permissionLevel %></td>
+                    </tr>
+                        <% } %>
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer>
+    <div class="containerF">
+        <h3 class="sponsorTag">Sponsors:</h3>
+        <img src="http://casgc.ucsd.edu/blog/wp-content/themes/casgc/images/logo_lofi.gif" alt="Other CASGC Logo 2" width="400"/>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F4d%2Fe4%2F30%2F4de430dde2298e5af2f8287318acf19f.png&f=1&nofb=1" width=155/>
+    </div>
+</footer>
+</html>
