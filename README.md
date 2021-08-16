@@ -1,2 +1,4 @@
 # NASAProjectNodeServer
 This is the server I developed for my autonomous vehicle during a summer internship with NASA.
+
+It is built with Node.js, Express.js, and modules for the Raspberry Pi camera. EJS is the template engine and the backend database is MySQL. This project was made to act as a human-machine interface between the autonomous vehicle I created and any authorized people who want to read its data or control the onboard electronic systems. During the course of the internship, I configured the database, made all webpages from scratch, and set permissions for known users in my network. However, further devlopment can be done to add more remote control features to the vehicle. If the project continues development, I will add a standalone interface to control all components of the vehicle over HTTP using JSON.
